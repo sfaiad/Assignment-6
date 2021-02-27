@@ -1,10 +1,9 @@
 ---
-output: pdf_document
 title: “My Report for Assignment 6”
 author: "Sara Faiad"
 date: "`r format(Sys.time(), '%d %B %Y')`"
 output: pdf_document
-documentclass: article
+documentclass: report
 geometry:
 - top=1.5in
 - bottom=1.5in
@@ -32,9 +31,10 @@ options("citation_format" = "pandoc")
 
 ```
 
-\fancyhead[L]{Faiad}
-\fancyhead[R]{Assignment 6}
-\fancyfoot[C]{\thepage}
+\pagestyle{fancy}
+\fancyhead[LO,LE]{Faiad}
+\fancyhead[RO,RE]{Assignment 6}
+\fancyfoot[CO,CE]{\thepage}
 
 # Abstract
 
@@ -71,7 +71,7 @@ Integer facilisis magnis et finibus parturient hendrerit ac, est, sit. Massa, ac
 Nisi sagittis. Pulvinar vel eu in maecenas vitae non, dolor. At integer arcu bibendum potenti nunc vestibulum taciti in sed platea. Quis praesent sapien id placerat maecenas eget, non. Sed ultricies nulla taciti lacinia dis sagittis imperdiet tellus, sed laoreet, semper. 
 
 \begin{equation}
-cor(y_{t}, x_{t-h})
+\text{cor}(y_{t}, x_{t-h})
 \end{equation}
 
 Class pulvinar quis dolor et neque. Tempus primis sed, urna, egestas. Massa laoreet feugiat mauris dignissim aliquam luctus.
